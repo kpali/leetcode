@@ -1,5 +1,6 @@
 package me.kpali.leetcode.twoSum;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -10,9 +11,9 @@ public class TwoSumTest {
     public void twoSum() {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
-        int[] results = twoSum.twoSum(nums, target);
-        for (int i = 0; i < results.length; i++) {
-            System.out.println(results[i]);
-        }
+        int[] actuals = twoSum.twoSum(nums, target);
+
+        int[] expecteds = {0, 1};
+        Assert.assertArrayEquals(expecteds, actuals);
     }
 }
