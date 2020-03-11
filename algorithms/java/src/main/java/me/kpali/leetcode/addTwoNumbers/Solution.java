@@ -1,6 +1,6 @@
 package me.kpali.leetcode.addTwoNumbers;
 
-public class AddTwoNumbers {
+public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         return this.addRecursion(l1, l2, 0);
     }

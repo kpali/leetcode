@@ -3,10 +3,8 @@ package me.kpali.leetcode.addTwoNumbers;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
-
-public class AddTwoNumbersTest {
-    private AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
+public class SolutionTest {
+    private Solution solution = new Solution();
     @Test
     public void addTwoNumbers1() {
         ListNode current;
@@ -28,7 +26,7 @@ public class AddTwoNumbersTest {
         next = new ListNode(4);
         current.next = next;
 
-        ListNode actual = addTwoNumbers.addTwoNumbers(l1, l2);
+        ListNode actual = solution.addTwoNumbers(l1, l2);
 
         int[] actuals = new int[3];
         current = actual;
@@ -53,7 +51,7 @@ public class AddTwoNumbersTest {
 
         ListNode l2 = new ListNode(5);
 
-        ListNode actual = addTwoNumbers.addTwoNumbers(l1, l2);
+        ListNode actual = solution.addTwoNumbers(l1, l2);
 
         int[] actuals = new int[2];
         current = actual;

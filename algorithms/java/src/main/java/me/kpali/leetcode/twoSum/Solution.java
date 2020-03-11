@@ -1,6 +1,6 @@
 package me.kpali.leetcode.twoSum;
 
-public class TwoSum {
+public class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] results = new int[2];
         boolean isFound = false;
