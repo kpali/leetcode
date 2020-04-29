@@ -49,4 +49,22 @@ public class SolutionTest {
         int expectd = 2;
         Assert.assertEquals(expectd, actual);
     }
+
+    @Test
+    public void lengthOfLongestSubstring6() {
+        String input = "dvdf";
+        int actual = solution.lengthOfLongestSubstring(input);
+
+        int expectd = 3;
+        Assert.assertEquals(expectd, actual);
+    }
+
+    @Test
+    public void lengthOfLongestSubstring7() {
+        String input = "aabaab!bb";
+        int actual = solution.lengthOfLongestSubstring(input);
+
+        int expectd = 3;
+        Assert.assertEquals(expectd, actual);
+    }
 }

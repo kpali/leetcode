@@ -1,21 +1,30 @@
 package me.kpali.leetcode.longestSubstringWithoutRepeatingCharacters;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
-        Set<Character> charSet = new HashSet<Character>();
+        int longestSubstringCount = 0;
         if (s != null) {
             char[] chars = s.toCharArray();
             if (chars.length == 1) {
-                return 1;
-            }
-            for (int i = 1; i < chars.length; i++) {
-                char c = chars[i];
-                charSet.add(c);
+                longestSubstringCount = 1;
+            } else {
+                List<Character> charList = new ArrayList<Character>();
+                for (char c : chars) {
+                    if (charList.contains(c)) {
+                        int index = charList.indexOf(c);
+                        List<Character> tempCharList = charList.subList(index + 1, charList.size());
+                        charList = tempCharList;
+                    }
+                    charList.add(c);
+                    if (charList.size() > longestSubstringCount) {
+                        longestSubstringCount = charList.size();
+                    }
+                }
             }
         }
-        return charSet.size();
+        return longestSubstringCount;
     }
 }
