@@ -10,8 +10,8 @@ public class SolutionTest {
         String input = "abcabcbb";
         int actual = solution.lengthOfLongestSubstring(input);
 
-        int expectd = 3;
-        Assert.assertEquals(expectd, actual);
+        int expected = 3;
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -19,8 +19,8 @@ public class SolutionTest {
         String input = "bbbbb";
         int actual = solution.lengthOfLongestSubstring(input);
 
-        int expectd = 1;
-        Assert.assertEquals(expectd, actual);
+        int expected = 1;
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -28,8 +28,8 @@ public class SolutionTest {
         String input = "pwwkew";
         int actual = solution.lengthOfLongestSubstring(input);
 
-        int expectd = 3;
-        Assert.assertEquals(expectd, actual);
+        int expected = 3;
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -37,8 +37,8 @@ public class SolutionTest {
         String input = " ";
         int actual = solution.lengthOfLongestSubstring(input);
 
-        int expectd = 1;
-        Assert.assertEquals(expectd, actual);
+        int expected = 1;
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -46,8 +46,8 @@ public class SolutionTest {
         String input = "au";
         int actual = solution.lengthOfLongestSubstring(input);
 
-        int expectd = 2;
-        Assert.assertEquals(expectd, actual);
+        int expected = 2;
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -55,8 +55,8 @@ public class SolutionTest {
         String input = "dvdf";
         int actual = solution.lengthOfLongestSubstring(input);
 
-        int expectd = 3;
-        Assert.assertEquals(expectd, actual);
+        int expected = 3;
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -64,7 +64,7 @@ public class SolutionTest {
         String input = "aabaab!bb";
         int actual = solution.lengthOfLongestSubstring(input);
 
-        int expectd = 3;
-        Assert.assertEquals(expectd, actual);
+        int expected = 3;
+        Assert.assertEquals(expected, actual);
     }
 }

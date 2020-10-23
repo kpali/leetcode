@@ -1,29 +1,28 @@
 package me.kpali.leetcode.medianOfTwoSortedArrays;
 
+import java.util.Arrays;
+
 public class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        Double median1 = null;
-        if (nums1.length == 1) {
-            median1 = (double) nums1[0];
-        } else if (nums1.length > 1) {
-            median1 = (nums1[0] + nums1[nums1.length - 1]) / 2d;
-        }
+        // sort
+        int[] nums3 = new int[nums1.length + nums2.length];
+        System.arraycopy(nums1, 0, nums3, 0, nums1.length);
+        System.arraycopy(nums2, 0, nums3, nums1.length, nums2.length);
 
-        Double median2 = null;
-        if (nums2.length == 1) {
-            median2 = (double) nums2[0];
-        } else if (nums2.length > 1) {
-            median2 = (nums2[0] + nums2[nums2.length - 1]) / 2d;
+        if (nums3.length == 1) {
+            return nums3[0];
         }
+        Arrays.sort(nums3);
 
-        if (median1 != null && median2 != null) {
-            return (median1 + median2) / 2;
-        } else if (median1 != null) {
-            return median1;
-        } else if (median2 != null) {
-            return median2;
+        if (nums3.length % 2 != 0) {
+            // odd length
+            return nums3[(nums3.length - 1) / 2];
         } else {
-            return 0;
+            // even length
+            int halfLen = nums3.length / 2;
+            int left = nums3[halfLen - 1];
+            int right = nums3[halfLen];
+            return (double)(left + right) / 2d;
         }
     }
 }
