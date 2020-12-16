@@ -6,7 +6,7 @@ import org.junit.Test;
 public class SolutionTest {
     private Solution solution = new Solution();
     @Test
-    public void findMedianSortedArrays1() {
+    public void test1() {
         int[] nums1 = new int[2];
         nums1[0] = 1;
         nums1[1] = 3;
@@ -19,7 +19,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void findMedianSortedArrays2() {
+    public void test2() {
         int[] nums1 = new int[2];
         nums1[0] = 1;
         nums1[1] = 2;
@@ -33,7 +33,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void findMedianSortedArrays3() {
+    public void test3() {
         int[] nums1 = new int[0];
         int[] nums2 = new int[1];
         nums2[0] = 1;
@@ -44,7 +44,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void findMedianSortedArrays4() {
+    public void test4() {
         int[] nums1 = new int[1];
         nums1[0] = 3;
         int[] nums2 = new int[2];

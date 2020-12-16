@@ -7,7 +7,7 @@ public class SolutionTest {
     Solution solution = new Solution();
 
     @Test
-    public void reverse1() {
+    public void test1() {
         int input = 123;
         int expected = 321;
         int actual = solution.reverse(input);
@@ -15,7 +15,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void reverse2() {
+    public void test2() {
         int input = -123;
         int expected = -321;
         int actual = solution.reverse(input);
@@ -23,7 +23,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void reverse3() {
+    public void test3() {
         int input = 120;
         int expected = 21;
         int actual = solution.reverse(input);
@@ -31,7 +31,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void reverse4() {
+    public void test4() {
         int input = 0;
         int expected = 0;
         int actual = solution.reverse(input);
@@ -39,7 +39,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void reverse5() {
+    public void test5() {
         int input = 1534236469;
         int expected = 0;
         int actual = solution.reverse(input);

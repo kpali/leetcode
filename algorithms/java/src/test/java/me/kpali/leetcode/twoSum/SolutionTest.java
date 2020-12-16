@@ -6,7 +6,7 @@ import org.junit.Test;
 public class SolutionTest {
     private Solution solution = new Solution();
     @Test
-    public void twoSum() {
+    public void test1() {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
         int[] actuals = solution.twoSum(nums, target);

@@ -6,7 +6,7 @@ import org.junit.Test;
 public class SolutionTest {
     private Solution solution = new Solution();
     @Test
-    public void lengthOfLongestSubstring1() {
+    public void test1() {
         String input = "abcabcbb";
         int actual = solution.lengthOfLongestSubstring(input);
 
@@ -15,7 +15,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void lengthOfLongestSubstring2() {
+    public void test2() {
         String input = "bbbbb";
         int actual = solution.lengthOfLongestSubstring(input);
 
@@ -24,7 +24,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void lengthOfLongestSubstring3() {
+    public void test3() {
         String input = "pwwkew";
         int actual = solution.lengthOfLongestSubstring(input);
 
@@ -33,7 +33,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void lengthOfLongestSubstring4() {
+    public void test4() {
         String input = " ";
         int actual = solution.lengthOfLongestSubstring(input);
 
@@ -42,7 +42,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void lengthOfLongestSubstring5() {
+    public void test5() {
         String input = "au";
         int actual = solution.lengthOfLongestSubstring(input);
 
@@ -51,7 +51,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void lengthOfLongestSubstring6() {
+    public void test6() {
         String input = "dvdf";
         int actual = solution.lengthOfLongestSubstring(input);
 
@@ -60,7 +60,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void lengthOfLongestSubstring7() {
+    public void test7() {
         String input = "aabaab!bb";
         int actual = solution.lengthOfLongestSubstring(input);
 

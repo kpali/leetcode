@@ -6,7 +6,7 @@ import org.junit.Test;
 public class SolutionTest {
     private Solution solution = new Solution();
     @Test
-    public void convert1() {
+    public void test1() {
         String actual = solution.convert("PAYPALISHIRING", 3);
 
         /**
@@ -19,7 +19,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void convert2() {
+    public void test2() {
         String actual = solution.convert("PAYPALISHIRING", 4);
 
         /**
@@ -33,7 +33,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void convert3() {
+    public void test3() {
         String actual = solution.convert("A", 1);
 
         String expected = "A";
@@ -41,7 +41,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void convert4() {
+    public void test4() {
         String actual = solution.convert("AB", 1);
 
         String expected = "AB";

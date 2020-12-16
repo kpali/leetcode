@@ -7,7 +7,7 @@ public class SolutionTest {
     Solution solution = new Solution();
 
     @Test
-    public void longestPalindromicSubstring1() {
+    public void test1() {
         String input = "babad";
         String actual = solution.longestPalindrome(input);
 
@@ -16,7 +16,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void longestPalindromicSubstring2() {
+    public void test2() {
         String input = "cbbd";
         String actual = solution.longestPalindrome(input);
 
@@ -25,7 +25,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void longestPalindromicSubstring3() {
+    public void test3() {
         String input = "a";
         String actual = solution.longestPalindrome(input);
 
@@ -34,7 +34,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void longestPalindromicSubstring4() {
+    public void test4() {
         String input = "ac";
         String actual = solution.longestPalindrome(input);
 
@@ -43,7 +43,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void longestPalindromicSubstring5() {
+    public void test5() {
         String input = "aacabdkacaa";
         String actual = solution.longestPalindrome(input);
 

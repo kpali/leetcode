@@ -6,7 +6,7 @@ import org.junit.Test;
 public class SolutionTest {
     private Solution solution = new Solution();
     @Test
-    public void addTwoNumbers1() {
+    public void test1() {
         ListNode current;
         ListNode next;
 
@@ -43,7 +43,7 @@ public class SolutionTest {
     }
 
     @Test
-    public void addTwoNumbers2() {
+    public void test2() {
         ListNode current;
         ListNode next;
 
