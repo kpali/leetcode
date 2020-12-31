@@ -1,4 +1,4 @@
-package me.kpali.leetcode.intToRoman;
+package me.kpali.leetcode.romanToInt;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -8,36 +8,36 @@ public class SolutionTest {
 
     @Test
     public void test1() {
-        String expected = "III";
-        String actual = solution.intToRoman(3);
+        int expected = 3;
+        int actual = solution.romanToInt("III");
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void test2() {
-        String expected = "IV";
-        String actual = solution.intToRoman(4);
+        int expected = 4;
+        int actual = solution.romanToInt("IV");
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void test3() {
-        String expected = "IX";
-        String actual = solution.intToRoman(9);
+        int expected = 9;
+        int actual = solution.romanToInt("IX");
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void test4() {
-        String expected = "LVIII";
-        String actual = solution.intToRoman(58);
+        int expected = 58;
+        int actual = solution.romanToInt("LVIII");
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void test5() {
-        String expected = "MCMXCIV";
-        String actual = solution.intToRoman(1994);
+        int expected = 1994;
+        int actual = solution.romanToInt("MCMXCIV");
         Assert.assertEquals(expected, actual);
     }
 }

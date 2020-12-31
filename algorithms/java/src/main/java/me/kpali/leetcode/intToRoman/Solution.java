@@ -1,6 +1,6 @@
 package me.kpali.leetcode.intToRoman;
 
-public class Soluition {
+public class Solution {
     public String intToRoman(int num) {
         if (num >= 1000) {
             return "M" + intToRoman(num - 1000);
